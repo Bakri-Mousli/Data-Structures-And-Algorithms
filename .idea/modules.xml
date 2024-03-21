@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Algorithms-LinkedList-Implementation/Algorithms-LinkedList-Implementation.iml" filepath="$PROJECT_DIR$/Algorithms-LinkedList-Implementation/Algorithms-LinkedList-Implementation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Algorithms-Stack-Implementation/Algorithms-Stack-Implementation.iml" filepath="$PROJECT_DIR$/Algorithms-Stack-Implementation/Algorithms-Stack-Implementation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Projects-Implementation.iml" filepath="$PROJECT_DIR$/.idea/Projects-Implementation.iml" />
+    </modules>
+  </component>
+</project>
