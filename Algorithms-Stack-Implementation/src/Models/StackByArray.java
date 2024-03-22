@@ -2,11 +2,11 @@ package Models;
 public class StackByArray {
     private int MAX_SIZE ;
     private int top;
-    private int[] data = new int[MAX_SIZE];
+    private int[] data;
 
     public StackByArray(int MAX_SIZE) {
         this.MAX_SIZE = MAX_SIZE;
-        this.data =  new int[MAX_SIZE];
+        this.data = new int[MAX_SIZE];
         this.top = -1;
     }
     public boolean isEmpty(){return top != MAX_SIZE-1;}
@@ -27,7 +27,11 @@ public class StackByArray {
             System.out.println("The Stack is Empty...");
         return 0;
     }
-    public int peek(){return this.data[top];}
+    public int peek(){
+        if(this.top > -1)
+            return this.data[top];
+        return -1;
+    }
     public void printStackElements(){
         System.out.println("The Stack Element is : ");
         for (int i = top; i >= 0 ; i--) {

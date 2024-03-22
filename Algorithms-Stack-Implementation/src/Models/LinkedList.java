@@ -2,13 +2,9 @@ package Models;
 public class LinkedList {
     Node first;
     boolean isEmpty() {
-        if (first == null)
-            return true;
-        else
-            return false;
+        return first == null;
     }
-    public void addright(int data)
-    {
+    public void addToRight(int data) {
         Node newNode = new Node();
         newNode.data = data;
         if (isEmpty())
@@ -25,40 +21,30 @@ public class LinkedList {
             current.next = newNode;
         }
     }
-    public void addLeft(int data)
-    {
+    public void addToLeft(int data) {
         Node newNode = new Node();
         newNode.data = data;
         if (isEmpty())
-        {
             first = newNode;
-        }
         else {
         newNode.next=first;
         first=newNode;
         }
     }
-
-
-    public void display()
-    {
+    public void display() {
         Node current = first;
         while (current != null) {
             System.out.println(current.data);
             current = current.next;
         }
     }
-
-
     public int size() {
         int count = 0;
-
         Node current = first;
         while (current != null) {
             count++;
             current = current.next;
         }
-
         return count;
     }
     public Boolean search(int data) {
