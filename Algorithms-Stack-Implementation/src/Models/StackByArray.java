@@ -1,8 +1,8 @@
 package Models;
 public class StackByArray {
-    private int MAX_SIZE ;
+    private final int MAX_SIZE ;
     private int top;
-    private int[] data;
+    private final int[] data;
 
     public StackByArray(int MAX_SIZE) {
         this.MAX_SIZE = MAX_SIZE;
